@@ -41,6 +41,10 @@
     <jboss-as.deploy.pass>arun0123</jboss-as.deploy.pass>
     <plugin.war.warName>my-app-1.0-SNAPSHOT</plugin.war.warName>
       
+      <fileNames>
+                    <fileName>target/my-app-1.0-SNAPSHOT.war</fileName>
+                </fileNames>
+      
     </configuration>
  
     
