@@ -38,7 +38,7 @@
       <force>true</force>
     <jboss-as.deploy.hostname>localhost</jboss-as.deploy.hostname>  <!-- Where to deploy. -->
     <jboss-as.deploy.user>arun</jboss-as.deploy.user>
-    <jboss-as.deploy.pass></jboss-as.deploy.pass>
+    <jboss-as.deploy.pass>arun0123</jboss-as.deploy.pass>
     <plugin.war.warName>my-app-1.0-SNAPSHOT</plugin.war.warName>
       
     </configuration>
