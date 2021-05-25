@@ -38,6 +38,14 @@
         <password>arun0123</password>
         <port>8000</port>
     </configuration>
+    <executions>
+                    <execution>
+                        <phase>install</phase>
+                        <goals>
+                            <goal>deploy</goal>
+                        </goals>
+                    </execution>
+                </executions>
 </plugin>
 </plugins>
 </build>
