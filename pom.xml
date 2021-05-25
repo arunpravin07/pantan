@@ -40,7 +40,7 @@
                         </goals>
                         <configuration>
                             <deployEnabled>false</deployEnabled>
-                        <configuration>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>
