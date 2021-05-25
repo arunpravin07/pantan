@@ -33,19 +33,18 @@
     <artifactId>jboss-as-maven-plugin</artifactId>
     <version>7.9.Final</version>
     <configuration>
-        <hostname>localhost</hostname>
-        <username>arun</username>
-        <password>arun0123</password>
-        <port>8000</port>
+       
+      
+      <force>true</force>
+    <jboss-as.deploy.hostname>localhost</jboss-as.deploy.hostname>  <!-- Where to deploy. -->
+    <jboss-as.deploy.user>arun</jboss-as.deploy.user>
+    <jboss-as.deploy.pass></jboss-as.deploy.pass>
+    <plugin.war.warName>my-app-1.0-SNAPSHOT</plugin.war.warName>
+      
     </configuration>
-    <executions>
-                    <execution>
-                        <phase>install</phase>
-                        <goals>
-                            <goal>deploy</goal>
-                        </goals>
-                    </execution>
-                </executions>
+ 
+    
+
 </plugin>
 </plugins>
 </build>
