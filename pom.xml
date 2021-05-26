@@ -21,7 +21,15 @@
    
     <build>
         <plugins>
-           
+           <plugin>
+<groupId>org.jboss.as.plugins</groupId>
+<artifactId>jboss-as-maven-plugin</artifactId>
+<version>7.9.Final</version>
+
+<jboss-as.deploy.hostname>localhost</jboss-as.deploy.hostname> <!-- Where to deploy. -->
+<jboss-as.deploy.user>arun</jboss-as.deploy.user>
+<jboss-as.deploy.pass>arun0123</jboss-as.deploy.pass>
+  </plugin>
             <plugin>
                         <groupId>org.jboss.as.plugins</groupId>
                         <artifactId>jboss-as-maven-plugin</artifactId>
@@ -33,6 +41,9 @@
                                 <goals>
                                     <goal>undeploy</goal>
                                 </goals>
+                              <configuration>
+<failOnMissingWebXml>false</failOnMissingWebXml>
+</configuration>
                                 <configuration>
                                     <ignoreMissingDeployment>true</ignoreMissingDeployment>
                                 </configuration>
@@ -54,7 +65,6 @@
                         </configuration>
                     </plugin>
   
- 
 
 
 </plugins>
