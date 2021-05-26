@@ -30,7 +30,7 @@
                         <goals>
                             <goal>deploy</goal>
                         </goals>
-     </execution>
+     
   </executions>
 <configuration>
 <failOnMissingWebXml>false</failOnMissingWebXml>
