@@ -21,11 +21,36 @@
   <build>
 <plugins>
 <plugin>
-                <groupId>org.wildfly.plugins</groupId>
-                <artifactId>wildfly-maven-plugin</artifactId>
-                <version>2.1.0.Beta1</version>
-            </plugin>
+<groupId>org.apache.maven.plugins</groupId>
+<artifactId>maven-war-plugin</artifactId>
+<version>2.6</version>
+<configuration>
+<failOnMissingWebXml>false</failOnMissingWebXml>
+
+                <filteringDeploymentDescriptors>true</filteringDeploymentDescriptors>
+                <warName>my-app-1.0-SNAPSHOT</warName>
+            </configuration>
+        </plugin>    
+  <plugin>
+    <groupId>org.jboss.as.plugins</groupId>
+    <artifactId>jboss-as-maven-plugin</artifactId>
+    <version>7.9.Final</version>
+    <configuration>
+      <force>true</force>
+    <jboss-as.deploy.hostname>localhost</jboss-as.deploy.hostname>  <!-- Where to deploy. -->
+    <jboss-as.deploy.user>arun</jboss-as.deploy.user>
+    <jboss-as.deploy.pass>arun0123</jboss-as.deploy.pass>
+      <jboss-as.deploy.port>8000</jboss-as.deploy.port>
+    <plugin.war.warName>my-app-1.0-SNAPSHOT</plugin.war.warName>
+      
+      <fileNames>
+                    <fileName>target/my-app-1.0-SNAPSHOT.war</fileName>
+                </fileNames>
+      
+    </configuration>
   
+
+</plugin>
 </plugins>
 </build>
 </project>
