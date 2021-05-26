@@ -29,9 +29,7 @@
                             <execution>
                                 <id>undeploy</id>
                                 <phase>clean</phase>
-                                <goals>
-                                    <goal>undeploy</goal>
-                                </goals>
+                                
                                 <configuration>
                                     <ignoreMissingDeployment>true</ignoreMissingDeployment>
                                 </configuration>
