@@ -53,8 +53,8 @@
                         <configuration>
                             
                             <hostname>localhost</hostname>
-                            <username>testadmin</username>
-                            <password>welcome*1</password>
+                            <username>arun</username>
+                            <password>arun0123</password>
                             <port>9999</port>
                         </configuration>
                     </plugin>
