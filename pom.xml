@@ -49,7 +49,7 @@
 <jboss-as.deploy.port>9999</jboss-as.deploy.port>
 <jboss-as.deploy.user>arun</jboss-as.deploy.user>
 <jboss-as.deploy.pass>welcome</jboss-as.deploy.pass>
-<plugin.war.warName>my-app-1.0-SNAPSHOT</plugin.war.warName>
+<plugin.war.warName>arun</plugin.war.warName>
 <fileNames>
 <fileName>target\my-app-1.0-SNAPSHOT.war</fileName>
 </fileNames>
