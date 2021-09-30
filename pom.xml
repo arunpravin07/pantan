@@ -9,6 +9,12 @@
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+     <jbGroupName>HULK</jbGroupName>
+<jbProfileName>default</jbProfileName>
+<jbServerName>127.0.0.1</jbServerName>
+<jbServerPort>9990</jbServerPort>
+<jbUserName>arun</jbUserName>
+<jbPassword>arun*1</jbPassword>
 </properties>
   <dependencies>
     <dependency>
@@ -42,14 +48,27 @@
                             <goal>deploy</goal>
                         </goals>
                     </execution>
-                  <execution>
- <jbGroupName>HULK</jbGroupName>
-<jbProfileName>default</jbProfileName>
-<jbServerName>127.0.0.1</jbServerName>
-<jbServerPort>9990</jbServerPort>
-<jbUserName>arun</jbUserName>
-<jbPassword>arun*1</jbPassword>
-                </executions>
+              
+                </executions
+                  
+                  <configuration>
+<force>true</force>
+<hostname>1127.0.0.1</hostname>
+<port>9990</port>
+<username>arun</username>
+<password>arun*1</password>
+<filename>hulk.war</filename>
+<timeout>1000</timeout>
+<domain>
+<!-- This configuration is need only if you running JBoss in domain mode -->
+<server-groups>
+<server-group>${jbGroupName}</server-group>
+...
+</server-groups>
+...
+</domain>
+...
+</configuration>
             </plugin>
   
 
