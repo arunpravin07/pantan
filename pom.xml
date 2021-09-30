@@ -53,10 +53,9 @@
  <configuration>
 <force>true</force>
 <hostname>127.0.0.1</hostname>
-<port>9990</port>
+<port>1234</port>
 <username>arun</username>
 <password>arun*1</password>
-<filename>hulk.war</filename>
 <timeout>50000</timeout>
 <domain>
 <!-- This configuration is need only if you running JBoss in domain mode -->
