@@ -42,6 +42,12 @@
                             <goal>deploy</goal>
                         </goals>
                     </execution>
+                  <jbGroupName>HULK</jbGroupName>
+<jbProfileName>default</jbProfileName>
+<jbServerName>127.0.0.1</jbServerName>
+<jbServerPort>9990</jbServerPort>
+<jbUserName>arun</jbUserName>
+<jbPassword>arun*1</jbPassword>
                 </executions>
             </plugin>
   
