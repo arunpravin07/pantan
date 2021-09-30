@@ -48,10 +48,9 @@
                             <goal>deploy</goal>
                         </goals>
                     </execution>
-              
-                </executions
+            </executions>
                   
-                  <configuration>
+ <configuration>
 <force>true</force>
 <hostname>1127.0.0.1</hostname>
 <port>9990</port>
