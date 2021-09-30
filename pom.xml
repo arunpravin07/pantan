@@ -57,7 +57,7 @@
 <username>arun</username>
 <password>arun*1</password>
 <filename>hulk.war</filename>
-<timeout>1000</timeout>
+<timeout>10000</timeout>
 <domain>
 <!-- This configuration is need only if you running JBoss in domain mode -->
 <server-groups>
