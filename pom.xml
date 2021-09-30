@@ -30,24 +30,20 @@
 <failOnMissingWebXml>false</failOnMissingWebXml>
 </configuration>
 </plugin>
-<plugin>
-<groupId>org.jboss.as.plugins</groupId>
-<artifactId>jboss-as-maven-plugin</artifactId>
-<version>7.9.Final</version>
 
-<configuration>
-<force>true</force>
-<jboss-as.deploy.hostname>localhost</jboss-as.deploy.hostname> 
-  <!-- Where to deploy. -->
-<jboss-as.deploy.port>9999</jboss-as.deploy.port>
-<jboss-as.deploy.user>arun</jboss-as.deploy.user>
-<jboss-as.deploy.pass>arun0123</jboss-as.deploy.pass>
-<plugin.war.warName>arun</plugin.war.warName>
-<fileNames>
-<fileName>target\my-app-1.0-SNAPSHOT.war</fileName>
-</fileNames>
-</configuration>
-</plugin>
+          <plugin>
+                <groupId>org.jboss.as.plugins</groupId>
+                <artifactId>jboss-as-maven-plugin</artifactId>
+                <version>7.9.Final</version>
+                <executions>
+                    <execution>
+                        <phase>install</phase>
+                        <goals>
+                            <goal>deploy</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
   
 
 
